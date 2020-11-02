@@ -1,0 +1,19 @@
+recursive-include ingot *.py
+global-exclude *.py[co]
+global-exclude __pycache__
+include README.rst
+include CONTRIBUTING.rst
+include CHANGELOG.rst
+include LICENSE
+include requirements/*.txt
+recursive-exclude requirements *.in
+include tox.ini
+exclude *.yaml
+exclude *.toml
+exclude tests
+recursive-exclude tests *.py
+graft artwork
+graft docs
+graft tests
+graft .github
+prune docs/build
